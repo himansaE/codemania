@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Codemania V5.0</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js" defer></script>
+
+    <style>
+        body {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            height: 20vh;
+            background-image: url("background2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+        header {
+            background: #100a0a;
+            color: #000000;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        main {
+            padding: 2rem;
+            max-width: 700px;
+            margin: 2rem auto;
+            background: #160e0e;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .competition-details, .rules, .register {
+            padding: 1rem;
+            margin-bottom: 2rem;
+
+        }
+        .register button {
+            display: inline-block;
+            padding: 0.8rem 4.5rem;
+            color: #fff;
+            background-color: #11905b;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .register button:hover {
+            background-color: #2bae96;
+        }
+        /* Team Section */
+        .team {
+        padding: 2rem;
+        }
+
+        .team h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        align-items: justify;
+        color: #fcffff;
+        font-weight: 700;
+        }
+
+        .team-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        
+        }
+
+        .team-member {
+        background-color: none;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(253, 249, 249, 0.5); /* Depth effect */
+        text-align: center;
+        padding: 1rem;
+        width: 250px;
+        transition: transform 0.3s ease;
+        opacity: 100%;
+        backdrop-filter: blur(500px); /* Background blur effect */
+        color: #000000;
+        }
+
+        .team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        backdrop-filter: blur(50px); /* Background blur effect */
+        }
+
+        .team-member h3 {
+        margin: 0.5rem 0;
+        font-size: 1.2rem;
+        color: #000000;
+        }
+
+        .team-member p {
+        margin: 0;
+        color: #d3d3d3;
+        }
+
+
+
+        .team-member:hover {
+        transform: translateY(-5px);
+        
+        }
+
+        .team-member:hover img {
+        transform: scale(1.1);
+        }
+
+        .team-member:hover h3 {
+        color: #000000;
+
+        }
+
+        .team-member:hover p {
+        color: #ffffff;
+        }
+
+        footer {
+            background: #333;
+            color: #3f9a82;
+            text-align: center;
+            padding: 1rem 10;
+            position:floating;
+            bottom: 100;
+            width: 100%;
+            height: 4%;
+        }
+        .scrolled nav {
+            background: rgba(162, 182, 168, 0.593);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(162, 182, 168, 0.593);
+            border-radius: 25px;
+            padding: 10px 100px;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style:none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        .scrolled ul li a img {
+            filter: invert(3);
+        }
+        nav ul li a {
+            color: #008366;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: #71cfa8;
+        }
+
+        
+        .container {
+            display:flexbox;
+            align-items: center;
+            margin-bottom: 0rem;
+            background: rgba(61, 211, 171, 0.401);
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            .contact {
+            padding: 2rem;
+            margin-bottom: 2rem;
+            }
+            .contact h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #212b45;
+            font-weight: 700;
+            }           
+
+            .contact p {
+            color: #000000;
+            }
+            .contact form {
+            display: flexbox;
+            flex-direction: column;
+            }
+            .contact input, .contact textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+            border: 1px solid #056347;
+            }
+
+
+
+
+            .contact-left, .contact-right {
+            padding: 1rem;
+            margin-bottom: 2rem;
+            }
+            .contact-left {
+            padding: 1rem;
+            margin-bottom: 0rem;
+            display: inline;
+
+            
+            }
+
+            .contact-right {
+            padding: 1rem;
+            margin-bottom: 10rem;
+            display: inline;
+
+            }
+
+            .contact-right input, .contact-right textarea {
+            width: 90%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+            border: 1px solid #056347;
+            }
+
+            .contact-right button {
+            display: inline-block;
+            padding: 0.8rem 4.5rem;
+            color: #fff;
+            background-color: #008366;
+            border: 1px solid #056347;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            box-shadow: 0 40px 80px rgba(1, 0, 0, 0.4);
+            }
+
+            .contact-right button:hover {
+            background-color: #feffff;
+            }
+
+            .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            }
+    </style>
+    
+
+    <nav>
+        <ul>
+            <li style="margin-right: auto;"><a href="index.html"><img src="images/IEEE-CS_LogoTM-White.png" alt="Home" width="30" height="30"></a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            
+        </ul>
+    </nav>
+    
+</head>
+<body>
+    <header>
+        <h1><img src="images/Codemania_logo25.png" alt="Description of image" width="600" height="300"></h1>
+        
+    </header>
+
+    <main>
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-container">
+                <!-- Person 1 -->
+                <div class="team-member">
+                    <img src="images/Geeth.jpg" alt="Person 1">
+                    <h3>Geeth Rangika</h3>
+                    <p> Project CO- CHAIR</p>
+                </div>
+                
+                <!-- Person 2 -->
+                <div class="team-member">
+                    <img src="images/Vimarshana.jpg" alt="Person 2">
+                    <h3>Vimarshana Kithmini </h3>
+                    <p> Project CO- CHAIR</p>
+                </div>
+                
+                <!-- Person 3 -->
+                <div class="team-member">
+                    <img src="images/Minothma.jpg" alt="Person 3">
+                    <h3>Chanuthi Minothma</h3>
+                    <p>Project Secretary</p>
+                </div>
+            </div>
+        </section>
+        <div id="contact">
+            <div class="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Us</h1>
+                            <p><h3>If you have any questions, feel free to reach out to us.</h3></p>
+                            <p>Project Chairman</p>
+                            <p><i class="fa-solid fa-paper-plane"></i> palpolageeth@gmail.com</p>
+                            <p><i class="fa-solid fa-square-phone"></i> 0766938306</p><br>
+                            <p>Project Co-Chairman</p>
+                            <p><i class="fa-solid fa-paper-plane"></i> dissanayakekithmini@gmail.com</p>
+                            <p><i class="fa-solid fa-square-phone"></i> 0770714032</p><br>
+                            <p>Technical Head</p>
+                            <p><i class="fa-solid fa-paper-plane"></i> amaanahamed24@gmail.com</p>
+                            <p><i class="fa-solid fa-square-phone"></i> 0769223996</p><br>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/profile.php?id=61557430152468&mibextid=ZbWKwL">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/_._avii/profilecard/?igsh=MWZjbDBucDd1eW83OA==">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://x.com/PAravinda60071?t=9w9ufmHYqO6exlmSRrY7ig&s=09">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/prabhasha-aravinda-687325268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2" style="background-color: #008366; color: white;">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </main>
+    <img src="images/Background 2.jpg" alt="Scroll Image" class="scroll-image">
+    <footer>
+        <p>&copy; 2025 Coding Competition. All Rights Reserved.</p>
+        
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            document.body.classList.toggle('scrolled', window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline - Codemania V5.0</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+    <!-- Link to external JavaScript file -->
+    <script src="C:\Users\User\Documents\Codemania Basic code\script.js" defer></script>
+
+    <nav>
+        <ul>
+            <li style="margin-right: auto;"><a href="index.html"><img src="images/IEEE-CS_LogoTM-White.png" alt="Home" width="30" height="30"></a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+</head>
+<body>
+    <header>
+        <h1><img src="images/Codemania_logo25.png" alt="Description of image" width="600" height="300"></h1>
+    </header>
+    <main>
+        <style>
+            body {
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+                background-color: #000000;
+                height: 20vh;
+                background-image: url("background2.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            
+            header {
+                background: #100a0a;
+                color: #fff;
+                padding: 1rem 0;
+                text-align: center;
+            }
+            header h1 {
+                margin: 0;
+                font-size: 2.5rem;
+            }
+            main {
+                padding: 2rem;
+                max-width: 700px;
+                margin: 2rem auto;
+                background: #160e0e;
+                border-radius: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            .competition-details, .rules, .register {
+                padding: 1rem;
+                margin-bottom: 2rem;
+
+            }
+            .register button {
+                display: inline-block;
+                padding: 0.8rem 4.5rem;
+                color: #fff;
+                background-color: #11905b;
+                border: none;
+                border-radius: 50px;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+            .register button:hover {
+                background-color: #2bae96;
+            }
+            footer {
+                background: #333;
+                color: #3f9a82;
+                text-align: center;
+                padding: 1rem 10;
+                position:floating;
+                bottom: 100;
+                width: 100%;
+                height: 4%;
+            }
+            nav {
+                position: fixed;
+                top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: rgba(162, 182, 168, 0.593);
+                border-radius: 25px;
+                padding: 10px 100px;
+                z-index: 1000;
+            }
+            nav ul {
+                list-style:none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 0 20px;
+            }
+            nav ul li a {
+                color: #008366;
+                
+            }
+            nav ul li a:hover {
+                color: #71cfa8;
+
+            }
+
+            .timeline {
+            position: relative;
+            margin: 20px 0;
+            padding: 0;
+            list-style: none;
+            color: #fff;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 20px 0;
+            padding-left: 50px; /* Space for the line */
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 20px; /* Adjust this to position the line */
+            width: 2px;
+            height: 100%;
+            background: #00a37f; /* Line color */
+        }
+
+        .timeline-content {
+            background: #005240; /* Background color for the content */
+            border: 1px solid #00a37f; /* Border for the content */
+            border-radius: 5px;
+            padding: 10px;
+            position: relative;
+            box-shadow: 0 2px 5px rgb(0, 0, 0);
+            backdrop-filter: blur(100px); /* Background blur effect */
+        }
+        .timeline-item:nth-child(odd) .timeline-content {
+            left: 30px; /* Shift odd items to the right */
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            left: -30px; /* Shift even items to the left */
+        }
+
+
+        </style>
+
+        <section class="competition-details">
+            <h2>Competition Timeline</h2>
+            <p>Stay updated with the important dates and events of the competition.</p>
+        </section>
+        <section class="rules">
+            <h2>Key Dates</h2>
+            <ul>
+                <li>Registration Opens: January 1, 2025</li>
+                <li>Submission Deadline: March 1, 2025</li>
+                <li>Judging Period: March 2 - March 15, 2025</li>
+                <li>Winners Announced: March 20, 2025</li>
+            </ul>
+        </section>
+        
+        <section class="register">
+            <h2>Event Schedule</h2>
+            <p>Details about the events and activities will be updated here.</p>
+        </section>
+        <section class="timeline">
+            <h2>Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Registration Opens</h3>
+                        <p>January 1, 2025</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Submission Deadline</h3>
+                        <p>March 1, 2025</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Judging Period</h3>
+                        <p>March 2 - March 15, 2025</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Winners Announced</h3>
+                        <p>March 20, 2025</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <img src="images/Background 2.jpg" alt="Scroll Image" class="scroll-image">
+    <footer>
+        <p>&copy; 2025 Coding Competition. All Rights Reserved.</p>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            document.body.classList.toggle('scrolled', window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
